@@ -24,19 +24,19 @@ git clone https://github.com/elbernante/movieindex.git
 
 ### Launching the Page
 
-In the command line, go to the directory of movieindex and run the command:
+In the command line, go to the directory of ```movieindex/``` and run the command:
 
 ```bash
 python index.py
 ```
 
-A new file **index.html** will be created (if it doesn't already already, otherwise it will be overwritten) in the **movieindex** directory. This file will then be automatically launched on the default browser.
+A new file **index.html** will be created (if it doesn't already exists, otherwise it will be overwritten) in the ```movieindex/``` directory. This file will then be automatically launched on the default browser.
 
 
 Supported Browsers
 --------------------------------------
 
-The following browsers are supported. Other browsers might work, but were not tested.
+The following browsers are supported. Other browsers might work, but are not tested.
 - Google Chrome on Mac (Version 43)
 - Safari on Mac(Version 8)
 
@@ -80,7 +80,7 @@ The ```soul/``` represents the **model** part of the MVC pattern. It holds class
 
 #### View
 
-The ```outfit/``` represents the **view** part of the MVC pattern. It holds the files related to the front-end. ```templates.py``` contains an abstract class for html template classes. Each ```*.html``` file has corresponding ```*.py``` file to represent its Python class.
+The ```outfit/``` represents the **view** part of the MVC pattern. It holds the files related to front-end. ```templates.py``` contains an abstract class for html template classes. Each ```*.html``` file has corresponding ```*.py``` file to represent its Python class.
 
 #### Controller
 The ```brain/``` represents the **controller** part of the MVC pattern. It contains the ```ControlRoom()``` class which is responsible for coordinating between data and view.
