@@ -1,0 +1,43 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#ml-navigation" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">Movie Index</a>
+		</div>
+		<div class="collapse navbar-collapse" id="ml-navigation">
+			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown" id="genre-filter">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+						<span data-role="selected-display">Show All</span>
+						<span class="glyphicon glyphicon-filter pull-left"></span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li class="dropdown-header">Genre</li>
+						{genre_filters}
+						<li role="separator" class="divider"></li>
+						<li class="active" value="showall" data-role="select-entry"><a href="#">Show All</a></li>
+					</ul>
+				</li>
+				<li class="dropdown" id="moviesort">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+						<span data-role="selected-display">Sort</span>
+						<span class="glyphicon glyphicon-sort-by-attributes pull-left"></span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li class="dropdown-header">Sorty by:</li>
+						<li data-role="select-entry" value="title"><a href="#">Title</a></li>
+						<li data-role="select-entry" value="rating"><a href="#">Rating</a></li>
+						<li data-role="select-entry" value="release_date"><a href="#">Year</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>

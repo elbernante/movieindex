@@ -1,0 +1,228 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+	padding-top: 50px;
+	padding-bottom: 20px;
+	background-color: #222;
+}
+
+/***** NAVIGATION BAR PROPERTIES *****/
+.navbar {
+	background-color: #FA6900;
+}
+
+.navbar-default .navbar-brand {
+	color: #FFFFFF;
+}
+
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
+  background-color: #F38630;
+}
+
+/***** BANNER PROPERTIES *****/
+[data-role="banner"] p {
+	color: #F38630;
+}
+
+[data-role="banner"] a {
+	color: #333;
+}
+
+[data-role="banner"] a:focus, [data-role="banner"] a:hover  {
+	color: #000;
+	text-decoration: none;
+}
+
+/***** TILE PROPERTIES *****/
+.tile {
+	width: 250px;
+	background: #ffffff;
+	border: 1px solid #999;
+	padding: 5px;
+	margin: 10px;
+	float: left;
+
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+	-webkit-box-shadow: 0px 0px 5px 1px #1D1D1D;
+	-moz-box-shadow: 0px 0px 5px 1px #1D1D1D;
+	box-shadow: 0px 0px 5px 1px #1D1D1D;
+}
+
+.tile img {
+	cursor: pointer;
+}
+
+.tile .caption {
+	padding-top: 0px;
+}
+
+.tile .caption h3 {
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+.tile .caption h4 {
+	margin-top: 2px;
+}
+
+.tile .caption h4.rating {
+	color: #555;
+}
+
+.tile .tile-title {
+	color: #FA6900;
+	cursor: pointer;
+}
+
+.tile .tile-title:hover {
+	color: #F38630;
+}
+
+.tile h4 {
+	color: #F38630;
+}
+
+.tile div.caption p {
+	font-size: 12px;
+}
+
+.tile span.posteroverlay {
+	background:url(images/play.png) center center no-repeat #000000;
+	position: absolute;
+	cursor: pointer;
+	z-index: 10;
+	opacity: 0;
+
+	-webkit-box-shadow: 0px 0px 4px #000;
+	-moz-box-shadow: 0px 0px 4px  #000;
+	box-shadow: 0px 0px 4px  #000;
+}
+
+.tile span.posteroverlay:hover {
+	background-color: #1A1A1A;
+}
+
+.tile div.moredetail {
+	background-color:rgba(255, 255, 255, 0.6);
+	position: absolute;
+	z-index: 10;
+	width: 238px;
+	height: 100px;
+    bottom: 0px;
+    display: none;
+
+    -webkit-border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+	border-radius: 5px 5px 0px 0px;
+
+	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); 
+	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); 
+}
+
+.tile div.moredetail button.btn-middle {
+  position: absolute;
+  top: 50%;
+  opacity: 0;
+
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+ }
+
+ .tile div.moredetail button.btn-middle:hover{
+  opacity: 0;
+ }
+
+ .tile div.moredetail .btn-info {
+  color: #fff;
+  background-color: #F38630;
+  border-color: #FA6900;
+}
+
+.tile div.moredetail .btn-info:hover {
+  color: #fff;
+  background-color: #FA6900;
+  border-color: #F38630;
+}
+
+.btn-primary {
+	background-color: #FA6900;
+	border-color: #F38630;
+}
+
+.btn-primary:hover {
+	background-color: #F38630;
+	border-color: #FA6900;
+}
+
+/***** MODAL PROPERTIES *****/
+.modal-backdrop, .modal-backdrop.fade.in {
+    opacity: 0.9;
+}
+
+/***** VIDEO MODAL PROPERTIES *****/
+#videoModal .modal-header {
+	color: #FFFFFF;
+	padding: 0;
+	border: 0;
+}
+
+#videoModal .modal-header button {
+	color: #FFFFFF;
+}
+
+#videoModal .modal-content {
+	background-color: #000000;
+}
+
+#videoModal .modal-body {
+	padding: 0;
+}
+
+/***** MOVIE DETAILS MODAL PROPERTIES *****/
+#showdetails .modal-content {
+	background-color: #FA6900;
+}
+
+#showdetails .modal-header {
+	color: #fff;
+}
+
+#showdetails .modal-body {
+	background-color: #eee;
+}
+
+#showdetails .modal-body h3 {
+	color: #FA6900;
+}
+
+#showdetails .modal-body .thumbnail {
+	background-color: #FA6900;
+}
+
+#showdetails .modal-body [data-role="mv-trailer"] {
+	background-color: #333;
+	color: #fff;
+}
+
+#showdetails .modal-body [data-role="mv-trailer"]:hover {
+	background-color: #444;
+	color: #fff;
+}
+
+#showdetails .modal-body dt {
+	color: #FA6900;
+}
+
+#showdetails .modal-body .dl-horizontal dt {
+  width: 88px;
+}
+
+@media (min-width: 641px) {
+	#showdetails .modal-body .dl-horizontal dd {
+	  margin-left: 100px;
+	}
+}
