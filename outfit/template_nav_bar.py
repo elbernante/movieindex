@@ -9,7 +9,7 @@ class TemplateNavBar(HtmlTemplates):
 
     _LIST_ITEM_TEMPLATE = '''
         <li value=\"{value}\" data-role="select-entry">
-            <a href=\"#\">{display_text}</a>
+            <a href=\"#!\">{display_text}</a>
         </li>
         '''
 
